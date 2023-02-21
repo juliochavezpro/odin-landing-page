@@ -4,8 +4,16 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: extra-bold;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 24px;
 }
 
 nav {
@@ -16,6 +24,13 @@ nav {
   background-color: #1F2937;
 }
 
+ul {
+  display: flex;  
+  list-style: none;
+  gap: 20px;
+  font-size: 24px;
+}
+
 a {
   color: white;
   font-family: roboto, arial, sans-serif;
@@ -23,26 +38,43 @@ a {
 }
 
 a:hover {
-    color: #E1E1E1;
+  color: #E1E1E1;
 }
+
+button {
+  font-size: 24px;
+  flex-shrink: 0;
+  height: 50px;
+  background-color: #3882F6;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  align-self: center;
+  border: solid white;
+  padding: 0px 15px;
+}
+
+button:hover {
+  background-color: #69A4FF;
+}
+
 
 .hero {
   color: white;
   background-color: #1F2937;
-  padding: 20px 50px 50px 50px;
+  padding: 20px 90px 50px 90px;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .hero > img {
-    height: 300px;
-    width: auto;
+  height: auto;
+  width: 700px;
 }
 
-ul {
-  display: flex;  
-  list-style: none;
-  gap: 20px;
+.hero-content > a > button {
+  border: 0px;
 }
 
 .about {
@@ -56,39 +88,38 @@ ul {
 }
 
 .about > img {
-    height: 300px;
-    width: auto;
-    border-radius: 50%;
-  }
-
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #E5E7EB;
-    padding: 70px 50px;
-    gap: 20px;
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  padding: 70px 50px;
+  gap: 20px;
+}
 
 .projects-header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-grid {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 30px;
-    gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .projects-container > a {
@@ -115,26 +146,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
-}
-
-button {
-    flex-shrink: 0;
-    height: 50px;
-    background-color: #3882F6;
-    color: white;
-    border-color: white;
-    border-radius: 10px;
-    align-self: center;
-    border: solid white;
-    padding: 0px 15px;
-  }
-
-button:hover {
-    background-color: #69A4FF;
-}
-
-.hero-content > a > button {
-    border: 0px;
 }
 
 .footer {
