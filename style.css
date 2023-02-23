@@ -47,11 +47,12 @@ nav {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   #hero-img {
     display: none;
   }  
-}
+} */
+
 
 ul {
   list-style: none;
@@ -106,8 +107,8 @@ button:hover {
   gap: 30px;
 }
 
-.about > img {
-  height: 60%;
+.headshot > img {
+  width: 100%;
   border-radius: 50%;
 }
 
