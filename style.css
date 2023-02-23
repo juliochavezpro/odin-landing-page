@@ -11,6 +11,10 @@ body {
   background-color: #1F2937;
 }
 
+.grey-bg {
+  background-color: #E5E7EB;
+}
+
 h1 {
   font-size: 52px;
   font-weight: extra-bold;
@@ -38,6 +42,12 @@ p {
 
 nav {
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px){
+  #menu, #hero-img {
+    display: none;
+  }  
 }
 
 ul {
@@ -75,9 +85,15 @@ button:hover {
   padding: 30px 90px;
 }
 
-.hero > img {
-  height: auto;
-  width: 700px;
+.hero-content {
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.hero-img > img {
+  width: 500px;
+  margin: auto;
 }
 
 .about {
@@ -90,30 +106,16 @@ button:hover {
 .about > img {
   height: 300px;
   border-radius: 50%;
+  display: inline-block;
 }
 
 .projects-container {
-  flex-direction: column;
-  background-color: #E5E7EB;
   padding: 70px 50px;
-  gap: 20px;
 }
 
-.projects-grid {
-  justify-content: space-evenly;
-  margin-top: 30px;
-  gap: 20px;
-}
-
-.project {
-  flex-direction: column;
-  gap: 30px;
-}
-
-.projects-container > a {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.projects-container > img {
+  width: 300px;
+  border-radius: 5px;
 }
 
 .cta {
