@@ -41,11 +41,14 @@ p {
 }
 
 nav {
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px){
-  #menu, #hero-img {
+  #hero-img {
     display: none;
   }  
 }
@@ -53,7 +56,7 @@ nav {
 ul {
   list-style: none;
   gap: 20px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 a {
@@ -82,7 +85,7 @@ button:hover {
 
 
 .hero {
-  padding: 30px 90px;
+  padding-bottom: 30px;
 }
 
 .hero-content {
@@ -92,8 +95,8 @@ button:hover {
 }
 
 .hero-img > img {
-  width: 500px;
-  margin: auto;
+  width: 700px;
+  margin: 30px auto;
 }
 
 .about {
