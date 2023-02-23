@@ -95,8 +95,8 @@ button:hover {
 }
 
 .hero-img > img {
-  width: 700px;
-  margin: 30px auto;
+  width: 100%;
+  margin: auto;
 }
 
 .about {
@@ -107,7 +107,7 @@ button:hover {
 }
 
 .about > img {
-  height: 300px;
+  height: 100%;
   border-radius: 50%;
   display: inline-block;
 }
@@ -117,7 +117,7 @@ button:hover {
 }
 
 .projects-container > img {
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
 }
 
