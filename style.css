@@ -41,10 +41,10 @@ p {
 }
 
 nav {
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
   flex: 1;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 /* @media screen and (max-width: 600px){
@@ -58,6 +58,9 @@ ul {
   list-style: none;
   gap: 20px;
   font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -84,7 +87,6 @@ button:hover {
   background-color: #69A4FF;
 }
 
-
 .hero {
   padding-bottom: 30px;
 }
@@ -96,7 +98,8 @@ button:hover {
 }
 
 .hero-img > img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin: auto;
 }
 
